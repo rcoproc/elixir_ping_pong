@@ -19,6 +19,7 @@ iex(2)> pong = spawn(Ping, :start, [])
 iex(3)> send(ping, {:pong, pong})
 
 ping ->
+
 {:pong, #PID<0.114.0>}
      <- pong
 ping ->
