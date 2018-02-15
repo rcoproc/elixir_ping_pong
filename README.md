@@ -2,14 +2,15 @@
 
 
 
-`
+```
 $ iex -S mix
 
 ping = spawn(Ping, :start, [])
 
 pong = spawn(Ping, :start, [])
 
-send(ping, {:pong, pong})`
+send(ping, {:pong, pong})
+```
 
 ## Installation
 
