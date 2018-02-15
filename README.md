@@ -12,11 +12,11 @@ To run this project:
 ```
 $ iex -S mix
 
-ping = spawn(Ping, :start, [])
+iex(1)> ping = spawn(Ping, :start, [])
 
-pong = spawn(Ping, :start, [])
+iex(2)> pong = spawn(Ping, :start, [])
 
-send(ping, {:pong, pong})
+iex(3)> send(ping, {:pong, pong})
 
 ping ->
 {:pong, #PID<0.114.0>}
