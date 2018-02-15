@@ -1,6 +1,13 @@
 # PingPong
 
+To init this mix project:
 
+```
+mix new ping_pong
+```
+
+
+To run this project:
 
 ```
 $ iex -S mix
@@ -10,6 +17,20 @@ ping = spawn(Ping, :start, [])
 pong = spawn(Ping, :start, [])
 
 send(ping, {:pong, pong})
+
+ping ->
+{:pong, #PID<0.114.0>}
+     <- pong
+ping ->
+     <- pong
+ping ->
+     <- pong
+ping ->
+     <- pong
+ping ->
+     <- pong
+ping ->
+     <- pong
 ```
 
 ## Installation
